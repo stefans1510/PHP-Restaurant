@@ -63,7 +63,7 @@ include_once 'notifications.php';
                         <a href="product-view.php?select=<?= $row['product_id'] ?>" id="add-btn" class="btn mb-4 mx-auto">Select</a>
                     </div>
                 </div>
-            <?php endwhile; ?>
+            <?php endwhile ?>
         </div>
     </div>
 </body>
