@@ -12,7 +12,6 @@ include_once 'notifications.php';
 <body>
     <?php notification('success') ?>
     <div id="slider-indicator" class="carousel slide" data-ride="carousel">
-
         <ol class="carousel-indicators">
             <li data-target="#slider-indicator" data-slide-to="0" class="active"></li>
             <li data-target="#slider-indicator" data-slide-to="1"></li>
