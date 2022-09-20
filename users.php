@@ -2,10 +2,10 @@
 include_once 'sidebar.php';
 include_once 'notifications.php';
 
-$adminEmail = "admin@gmail.com";
+$selectAdmin = $qb->select("customers", "customer_username", " = 'admin'");
+$row = $selectAdmin->fetch();
 
-// $sqlSelect = "SELECT * FROM customers WHERE customer_email <> '$adminEmail'";
-// $result = $db->conn->query($sqlSelect);
+$adminEmail = $row['customer_email'];
 
 $selectCustomers = $qb->select("customers", "customer_email", " <> '$adminEmail'");
 ?>
