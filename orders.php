@@ -2,8 +2,6 @@
 include_once 'sidebar.php';
 include_once 'notifications.php';
 
-$db = new Server;
-
 $sqlSelect = "SELECT orders.order_id, customers.customer_email, orders.address, orders.apartment, orders.phone, orders.grand_total, orders.payment, orders.created, orders.status
      FROM orders JOIN customers ON customers.customer_id = orders.customer_id ORDER BY created DESC";
 $result = $db->conn->query($sqlSelect);
