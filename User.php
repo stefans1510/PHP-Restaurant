@@ -12,8 +12,8 @@ class User {
 
     public function findUserByEmailOrUsername($email, $username) {
         $this->db->prepare('SELECT * FROM customers WHERE customer_email = :email OR customer_username = :username');
-        $this->db->bind(':email', $email);
-        $this->db->bind(':username', $username);
+        $this->db->bind(":email", $email);
+        $this->db->bind(":username", $username);
 
         $row = $this->db->single_record();
 
@@ -26,7 +26,7 @@ class User {
 
     public function findUserByEmail($email) {
         $this->db->prepare('SELECT * FROM customers WHERE customer_email = :email');
-        $this->db->bind(':email', $email);
+        $this->db->bind(":email", $email);
 
         $row = $this->db->single_record();
 
@@ -39,11 +39,11 @@ class User {
 
     public function register($userData) {
         $this->db->prepare("INSERT INTO customers (customer_name, customer_email, customer_username, customer_password, customer_address) VALUES (:name, :email, :username, :password, :address)");
-        $this->db->bind(':name', $userData['name']);
-        $this->db->bind(':username', $userData['username']);
-        $this->db->bind(':email', $userData['email']);
-        $this->db->bind(':password', $userData['password']);
-        $this->db->bind(':address', $userData['address']);
+        $this->db->bind(":name", $userData['name']);
+        $this->db->bind(":username", $userData['username']);
+        $this->db->bind(":email", $userData['email']);
+        $this->db->bind(":password", $userData['password']);
+        $this->db->bind(":address", $userData['address']);
 
         if ($this->db->execute()) {
             return true;
@@ -69,8 +69,8 @@ class User {
     public function update_email($email) {
         $id = $_SESSION['id'];
         $this->db->prepare("UPDATE customers SET customer_email = :email WHERE customer_id = :id");
-        $this->db->bind(':email', $email);
-        $this->db->bind(':id', $id);
+        $this->db->bind(":email", $email);
+        $this->db->bind(":id", $id);
 
         if ($this->db->execute()) {
             return true;
@@ -82,8 +82,8 @@ class User {
     public function update_address($address) {
         $id = $_SESSION['id'];
         $this->db->prepare("UPDATE customers SET customer_address = :address WHERE customer_id = :id");
-        $this->db->bind(':address', $address);
-        $this->db->bind(':id', $id);
+        $this->db->bind(":address", $address);
+        $this->db->bind(":id", $id);
 
         if ($this->db->execute()) {
             return true;
@@ -95,8 +95,8 @@ class User {
     public function update_password($password) {
         $id = $_SESSION['id'];
         $this->db->prepare("UPDATE customers SET customer_password = :password WHERE customer_id = :id");
-        $this->db->bind(':password', $password);
-        $this->db->bind(':id', $id);
+        $this->db->bind(":password", $password);
+        $this->db->bind(":id", $id);
 
         if ($this->db->execute()) {
             return true;
@@ -107,8 +107,8 @@ class User {
 
     public function reset_password($newPasswordHash, $tokenEmail) {
         $this->db->prepare("UPDATE customers SET customer_password = :password WHERE customer_email = :email");
-        $this->db->bind(':password', $newPasswordHash);
-        $this->db->bind(':email', $tokenEmail);
+        $this->db->bind(":password", $newPasswordHash);
+        $this->db->bind(":email", $tokenEmail);
 
         if ($this->db->execute()) {
             return true;
