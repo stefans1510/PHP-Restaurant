@@ -637,7 +637,7 @@ footer {
     }
 
     .carousel {
-        margin: 35% auto;
+        margin: 40% auto;
         margin-bottom: 0%;
         width: 90%;
     }
@@ -645,6 +645,10 @@ footer {
     #order-details {
         margin: 50% auto;
         margin-left: 35%;
+    }
+
+    .form-message-green {
+        margin-top: 10%;
     }
 }
 
