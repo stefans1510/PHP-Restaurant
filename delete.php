@@ -7,9 +7,9 @@ $qb = new QueryBuilder;
 
 if (isset($_REQUEST['delete_product'])) {
     $productId = $_REQUEST['delete_product'];
-    $sqlDelte = $qb->delete('products', 'product_id', $productId);
+    $sqlDelete = $qb->delete('products', 'product_id', $productId);
 
-    if($sqlDelte) {
+    if($sqlDelete) {
         "<script>alert('Product successsfully deleted!')</script>";
         redirect("admin.php");
     } else {
@@ -19,9 +19,9 @@ if (isset($_REQUEST['delete_product'])) {
 
 if (isset($_REQUEST['delete_user'])) {
     $userId = $_REQUEST['delete_user'];
-    $sqlDelte = $qb->delete('customers', 'customer_id', $userId);
+    $sqlDelete = $qb->delete('customers', 'customer_id', $userId);
 
-    if($sqlDelte) {
+    if($sqlDelete) {
         "<script>alert('User successsfully deleted!')</script>";
         redirect("users.php");
     } else {

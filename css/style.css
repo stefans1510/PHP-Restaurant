@@ -240,7 +240,7 @@ table td {
     color: white;
     text-align: center;
     font-weight: normal;
-    font-size: 18px;   
+    font-size: 18px;
     border: none;
 }
 
@@ -441,10 +441,10 @@ footer {
 
 #order-details {
     background-color: #fefefe;
-    margin: 20% auto; 
+    margin: 20% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 50%; 
+    width: 50%;
     height: 30%;
     border: 2px solid lightseagreen;
     border-radius: 7px;
@@ -637,7 +637,7 @@ footer {
     }
 
     .carousel {
-        margin: 35% auto;
+        margin: 40% auto;
         margin-bottom: 0%;
         width: 90%;
     }
@@ -645,6 +645,10 @@ footer {
     #order-details {
         margin: 50% auto;
         margin-left: 35%;
+    }
+
+    .form-message-green {
+        margin-top: 10%;
     }
 }
 
@@ -692,8 +696,9 @@ footer {
     .profile-sidebar {
         width: 75px;
     }
+
     .profile-sidebar ul li {
-        font-size :x-small;
+        font-size: x-small;
         padding: 10px;
         margin-bottom: 50px;
     }

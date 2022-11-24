@@ -172,14 +172,14 @@ class QueryBuilder
 
     public function validate_cc($cardNumber)
     {
-        $cardtype = [
+        $cardType = [
             'visa' => "/^4[0-9]{12}(?:[0-9]{3})?$/",
             'mastercard' => "/^5[1-5][0-9]{14}$/"
         ];
 
-        if (preg_match($cardtype['visa'], $cardNumber)) {
+        if (preg_match($cardType['visa'], $cardNumber)) {
             return 'visa';
-        } elseif (preg_match($cardtype['mastercard'], $cardNumber)) {
+        } elseif (preg_match($cardType['mastercard'], $cardNumber)) {
             return 'mastercard';
         } else {
             return false;

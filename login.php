@@ -41,7 +41,7 @@ require_once 'notifications.php';
                         <div class="pass-link">
                             <a href="reset-password.php">Forgot password?</a>
                         </div><br>
-                        <button type="submit" name="submit" class="btn">Sign Up</button>
+                        <button type="submit" name="submit" class="btn">Log in</button>
                         <div class="signup-link">
                             Not a member? <a href="registration.php">Sign up now</a>
                         </div>

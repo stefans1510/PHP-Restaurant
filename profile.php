@@ -44,7 +44,7 @@ include_once 'navbar.php';
             <legend class="profile-legend">Change password</legend>
             <input type="hidden" name="action" value="update_password">
             <label for="password" class="profile-label">Enter New Password:</label>
-            <input type="password" class="profile-detail" id="password" name="password" pattern="[A-Za-z0-9]{6,}" title="Must contain atleast 6 characters. Letters and numbers only" required autofocus>
+            <input type="password" class="profile-detail" id="password" name="password" pattern="[A-Za-z0-9]{6,}" title="Must contain at least 6 characters. Letters and numbers only" required autofocus>
             <label for="repeat-password" class="profile-label">Repeat password:</label>
             <input type="password" class="profile-detail" id="repeat-password" name="repeat_password" required>
             <button class="btn update-btn btn-sm" type="submit">Update</button>

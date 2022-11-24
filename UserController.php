@@ -48,7 +48,7 @@ class UserController
                 redirect("registration.php");
             }
         } else {
-            notification("register", "Invalid email adress");
+            notification("register", "Invalid email address");
             redirect("registration.php");
         }
     }
@@ -125,7 +125,7 @@ class UserController
                 die("Error occurred");
             }
         } else {
-            notification("profile", "Invalid email adress");
+            notification("profile", "Invalid email address");
             redirect("profile.php?change_email");
         }
     }

@@ -35,16 +35,16 @@ require_once 'notifications.php';
                             <input type="text" name="name" placeholder="Name" autofocus required>
                         </div>
                         <div class="field">
-                            <input type="text" name="username" placeholder="Username" pattern="[A-Za-z0-9]{4,}" title="Must contain atleast 4 characters. Letters and numbers only" autofocus required>
+                            <input type="text" name="username" placeholder="Username" pattern="[A-Za-z0-9]{4,}" title="Must contain at least 4 characters. Letters and numbers only" autofocus required>
                         </div>
                         <div class="field">
-                            <input type="text" name="email" placeholder="Email Address" required>
+                            <input type="email" name="email" placeholder="Email Address" required>
                         </div>
                         <div class="field">
                             <input type="text" name="address" placeholder=" Home Address" required>
                         </div>
                         <div class="field">
-                            <input type="password" name="password_1" placeholder="Password" pattern="[A-Za-z0-9]{6,}" title="Must contain atleast 6 characters. Letters and numbers only" required>
+                            <input type="password" name="password_1" placeholder="Password" pattern="[A-Za-z0-9]{6,}" title="Must contain at least 6 characters. Letters and numbers only" required>
                         </div>
                         <div class="field">
                             <input type="password" name="password_2" placeholder="Repeat password" required>

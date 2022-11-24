@@ -23,7 +23,7 @@ include_once 'notifications.php';
                                 <h2 class="text-center">Credit card payment</h2>
                             </div>
                             <hr>
-                            <form action="" method="POST" novalidate="novalidate">
+                            <form action="" method="POST">
                                 <div class="form-group text-center">
                                     <ul class="list-inline">
                                         <li class="list-inline-item enabled-card"><i class="fa-brands fa-cc-visa"></i>
